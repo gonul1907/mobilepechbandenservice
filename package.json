@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "http-server ./ -p 8000 -c-1",
     "make-logo-transparent": "node scripts/remove-bg.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "autopush": "powershell -ExecutionPolicy Bypass -File scripts\\git-autopush.ps1"
   }
 }
