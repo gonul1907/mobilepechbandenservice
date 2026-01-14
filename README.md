@@ -19,8 +19,11 @@ Aanbevelingen / next steps:
 - Voeg echte afbeeldingen en logo toe in de map `assets/` en verwijs ernaar.
 - Voor live: push naar GitHub en activeer GitHub Pages of deploy naar Netlify/Vercel.
 
-Als je wilt, kan ik:
-- Een kleine Node/Express backend toevoegen om formulierinzendingen te ontvangen en een e-mail te sturen.
-- Een GitHub Pages deploy workflow creëren.
-- De site uitbreiden met meerdere pagina's of CMS-integratie.
+ Als je wilt, kan ik:
+ - Een kleine Node/Express backend toevoegen om formulierinzendingen te ontvangen en een e-mail te sturen.
+ - Een GitHub Pages deploy workflow creëren.
+ - De site uitbreiden met meerdere pagina's of CMS-integratie.
+ 
+ ---
+ Note: quick automatic commit created on 2026-01-14 to trigger a push from the local repo.
 
