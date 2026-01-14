@@ -24,7 +24,7 @@ html,body{height:100%}
 .call-now{margin-left:auto;background:var(--accent);color:var(--white);padding:.5rem .75rem;border-radius:6px;text-decoration:none}
 
 /* Logo sizing */
-.logo{height:44px;width:auto;display:block}
+.logo{height:64px;max-height:64px;width:auto;display:block}
 
 /* Accessibility: hide text if used */
 .sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
@@ -76,6 +76,11 @@ html,body{height:100%}
   .services .cards{grid-template-columns:repeat(3,1fr)}
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
   .footer-inner{flex-direction:row;justify-content:space-between;align-items:center}
+}
+
+@media(min-width:1000px){
+  .logo{height:84px;max-height:84px}
+  .site-header .header-inner{padding-top:0.25rem;padding-bottom:0.25rem}
 }
 
 /* small accessibility tweaks */
