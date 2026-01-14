@@ -1,0 +1,16 @@
+{
+  "name": "mobilebandenpechservice",
+  "version": "1.0.0",
+  "description": "Statische website voor Mobile Bandenpechservice",
+  "private": true,
+  "scripts": {
+    "dev": "http-server ./ -p 8000 -c-1",
+    "make-logo-transparent": "node scripts/remove-bg.js"
+  },
+  "dependencies": {
+    "jimp": "^0.16.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
