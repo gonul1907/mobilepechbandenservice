@@ -12,18 +12,41 @@ document.addEventListener('DOMContentLoaded',function(){
   const yearEl = document.getElementById('year');
   if(yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Fake form submit
+  // Real form submit (POST to /api/contact)
   const form = document.getElementById('contactForm');
   const msg = document.getElementById('formMsg');
-  if(form){
-    form.addEventListener('submit',function(e){
+  if (form) {
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
+      msg.style.color = '';
       msg.textContent = 'Verzenden… even geduld.';
-      // simulate network delay
-      setTimeout(()=>{
-        msg.textContent = 'Bedankt! Wij nemen zo snel mogelijk contact met u op.';
-        form.reset();
-      },1200);
+
+      const data = {
+        name: form.name?.value || '',
+        contact: form.contact?.value || '',
+        location: form.location?.value || '',
+        message: form.message?.value || ''
+      };
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const json = await res.json();
+        if (res.ok) {
+          msg.style.color = 'var(--accent)';
+          msg.textContent = json.message || 'Bedankt! Wij nemen zo snel mogelijk contact met u op.';
+          form.reset();
+        } else {
+          msg.style.color = 'crimson';
+          msg.textContent = json.error || 'Er is iets misgegaan bij het verzenden.';
+        }
+      } catch (err) {
+        msg.style.color = 'crimson';
+        msg.textContent = 'Kan geen verbinding maken met de server.';
+      }
     });
   }
 });
