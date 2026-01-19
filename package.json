@@ -1,22 +1,40 @@
 {
-  "name": "mobilebandenpechservice",
-  "version": "1.0.0",
-  "description": "Statische website voor Mobile Bandenpechservice",
+  "name": "banden-service-op-locatie",
+  "version": "2.0.0",
+  "description": "Professionele responsive website voor Banden Service Op Locatie - Mobiele bandenservice 24/7",
   "private": true,
-  
+  "keywords": [
+    "banden service",
+    "lekke band",
+    "bandenwissel",
+    "mobiele service",
+    "24/7"
+  ],
+  "author": "Banden Service Op Locatie",
+  "license": "MIT",
   "dependencies": {
-    "jimp": "^0.16.1",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "nodemailer": "^6.9.4",
-    "dotenv": "^16.3.1"
+    "jimp": "^0.16.1",
+    "nodemailer": "^6.9.4"
   },
   "devDependencies": {
     "http-server": "^14.1.1"
   },
   "scripts": {
-    "dev": "http-server ./ -p 8000 -c-1",
-    "make-logo-transparent": "node scripts/remove-bg.js",
     "start": "node server.js",
-    "autopush": "powershell -ExecutionPolicy Bypass -File scripts\\git-autopush.ps1"
+    "dev": "http-server ./ -p 8000 -c-1 -o",
+    "dev:nodemon": "nodemon --exec 'node server.js'",
+    "scrape": "node scripts/scrape-website.js",
+    "make-logo-transparent": "node scripts/remove-bg.js",
+    "autopush": "powershell -ExecutionPolicy Bypass -File scripts\\git-autopush.ps1",
+    "test": "echo 'No tests configured'"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   }
 }
+
