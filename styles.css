@@ -249,7 +249,7 @@ a:hover {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  background: linear-gradient(rgba(200, 16, 46, 0.3), rgba(200, 16, 46, 0.3)), url('Images/autoband3.png') center/cover no-repeat;
+  background: url('Images/autoband3.png') center/cover no-repeat;
   background-size: cover;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
