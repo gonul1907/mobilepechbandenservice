@@ -249,8 +249,10 @@ a:hover {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  background: url('Images/autoband.png') center/contain no-repeat;
-  background-size: auto;
+  background: url('Images/autoband.png') center/cover no-repeat;
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
   color: var(--text);
   padding: 4rem 1rem;
   text-align: center;
