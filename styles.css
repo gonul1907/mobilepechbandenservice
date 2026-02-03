@@ -294,6 +294,7 @@ a:hover {
 
 .visual-hero p {
   font-size: 1.3rem;
+  color: var(--primary);
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
 }
 
