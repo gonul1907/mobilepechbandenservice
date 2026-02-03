@@ -158,7 +158,8 @@ a:hover {
   font-weight: 700;
   color: var(--white);
   text-decoration: none;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .logo-text {
