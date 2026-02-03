@@ -249,8 +249,7 @@ a:hover {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-              url('Images/autoband.png') center/cover no-repeat;
+  background: url('Images/autoband.png') center/cover no-repeat;
   color: var(--text);
   padding: 4rem 1rem;
   text-align: center;
