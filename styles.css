@@ -115,12 +115,13 @@ a:hover {
 
 .btn-secondary {
   background: var(--secondary);
-  color: var(--primary);
+  color: #ffffff;
   border: 2px solid var(--secondary);
 }
 
 .btn-secondary:hover {
   background: var(--white);
+  color: var(--secondary);
   border-color: var(--secondary);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
