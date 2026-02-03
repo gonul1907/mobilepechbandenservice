@@ -248,10 +248,30 @@ a:hover {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  background: linear-gradient(135deg, rgba(200, 16, 46, 0.95) 0%, rgba(139, 0, 0, 0.95) 100%),
+              url('Images/autoband.png') center/cover no-repeat;
   color: var(--white);
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255, 255, 255, 0.02) 10px,
+    rgba(255, 255, 255, 0.02) 20px
+  );
+  pointer-events: none;
 }
 
 .hero-inner {
@@ -730,6 +750,112 @@ footer h4 {
   .contact-buttons .btn {
     width: 100%;
   }
+
+/* ===== TRUST BADGES ===== */
+.trust-badges {
+  background: linear-gradient(to bottom, #f8f8f8 0%, #ffffff 100%);
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.badge {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(200, 16, 46, 0.15);
+}
+
+.badge-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.badge h3 {
+  color: var(--primary);
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.badge p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== ENHANCED CARD STYLES ===== */
+.card {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(200, 16, 46, 0.2);
+}
+
+/* ===== PULSING CTA ANIMATION ===== */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(200, 16, 46, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(200, 16, 46, 0);
+  }
+}
+
+.btn-primary {
+  animation: pulse-glow 2s infinite;
+  box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
+}
+
+.btn-primary:hover {
+  animation: none;
+  box-shadow: 0 6px 25px rgba(200, 16, 46, 0.4);
+}
+
+/* ===== ALTERNATING SECTION BACKGROUNDS ===== */
+.section:nth-child(even) {
+  background: linear-gradient(to bottom, #fafafa 0%, #f5f5f5 100%);
+}
+
+.section:nth-child(odd) {
+  background: white;
+}
+
+/* ===== COUNTER ANIMATION ===== */
+.counter {
+  display: inline-block;
+  font-weight: bold;
+  color: var(--primary);
+}
 
 @media(max-width:680px){
   .cards,
