@@ -449,7 +449,15 @@ footer h4 {
   text-decoration: none;
 }
 
-.site-footer hr {
+.footer-content p a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-content p a:hover {
+  color: var(--secondary);
+}
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin: 1rem 0;
