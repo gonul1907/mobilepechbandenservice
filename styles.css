@@ -280,6 +280,19 @@ a:hover {
   image-rendering: crisp-edges;
 }
 
+.hero-diensten {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/band 2.png') center/cover no-repeat;
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.hero-diensten h1,
+.hero-diensten p {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
 /* ===== VISUAL HERO SECTION ===== */
 .visual-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/band 2.png') center/cover no-repeat;
