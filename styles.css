@@ -220,7 +220,22 @@ a:hover {
   box-shadow: var(--shadow-lg);
 }
 
-/* ===== RESPONSIVE NAVIGATION ===== */
+.whatsapp-btn {
+  background: #25D366;
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.whatsapp-btn:hover {
+  background: #20ba5a;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
 @media (min-width: 768px) {
   .nav-toggle {
     display: none;
@@ -257,6 +272,12 @@ a:hover {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.1rem;
   max-width: 600px;
+}
+
+.hero-logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 .hero-ctas {
