@@ -261,6 +261,16 @@ a:hover {
   border-bottom: 3px solid var(--primary);
 }
 
+.hero h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+  color: #ffffff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
 .hero-about {
   background: linear-gradient(rgba(200, 16, 46, 0.3), rgba(200, 16, 46, 0.3)), url('Images/autoband.png') center/cover no-repeat;
   background-size: cover;
