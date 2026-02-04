@@ -252,8 +252,6 @@ a:hover {
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/autoband3.png') center/cover no-repeat;
   background-size: cover;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
   color: var(--text);
   padding: 4rem 1rem;
   text-align: center;
@@ -276,15 +274,11 @@ a:hover {
 .hero-about {
   background: url('Images/band4.png') center/cover no-repeat;
   background-size: cover;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
 }
 
 .hero-diensten {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/band 2.png') center/cover no-repeat;
   background-size: cover;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
 }
 
 .hero-diensten h1,
