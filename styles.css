@@ -274,7 +274,7 @@ a:hover {
 }
 
 .hero-about {
-  background: linear-gradient(rgba(200, 16, 46, 0.3), rgba(200, 16, 46, 0.3)), url('Images/band4.png') center/cover no-repeat;
+  background: url('Images/band4.png') center/cover no-repeat;
   background-size: cover;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
