@@ -852,6 +852,7 @@ footer h4 {
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
+  justify-items: center;
 }
 
 .badge {
