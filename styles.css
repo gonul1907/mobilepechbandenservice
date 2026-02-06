@@ -734,6 +734,7 @@ footer h4 {
   counter-reset: step-counter;
   max-width: 600px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .steps-list li {
@@ -741,6 +742,7 @@ footer h4 {
   margin-bottom: 2rem;
   padding-left: 3rem;
   position: relative;
+  text-align: left;
 }
 
 .steps-list li:before {
