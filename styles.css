@@ -172,37 +172,56 @@ a:hover {
 .main-nav {
   display: none;
   gap: 0;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: var(--primary);
+  flex-direction: column;
+  padding: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.main-nav.active {
+  display: flex;
 }
 
 .main-nav a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
+  display: block;
+  padding: 1rem 1.5rem;
   color: var(--white);
   text-decoration: none;
-  border-bottom: 3px solid transparent;
+  border-left: 4px solid transparent;
   transition: all 0.2s ease;
 }
 
 .main-nav a:hover,
 .main-nav a.active {
   color: var(--secondary);
-  border-bottom-color: var(--secondary);
+  background: rgba(200, 16, 46, 0.1);
+  border-left-color: var(--secondary);
 }
 
 .nav-toggle {
   display: block;
   background: none;
-  border: 2px solid var(--white);
+  border: none;
   color: var(--white);
-  padding: 0.5rem 0.75rem;
-  border-radius: var(--radius);
+  padding: 0.5rem;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
 .nav-toggle:hover {
-  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
 }
 
 .call-now {
@@ -225,12 +244,16 @@ a:hover {
 .whatsapp-btn {
   background: #25D366;
   color: var(--white);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem;
   border-radius: var(--radius);
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s ease;
   white-space: nowrap;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .whatsapp-btn:hover {

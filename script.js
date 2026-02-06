@@ -2,10 +2,22 @@
 document.addEventListener('DOMContentLoaded',function(){
   const nav = document.getElementById('mainNav');
   const toggle = document.getElementById('navToggle');
+  
   toggle.addEventListener('click',function(){
     const expanded = this.getAttribute('aria-expanded') === 'true';
     this.setAttribute('aria-expanded', String(!expanded));
-    if(!expanded){nav.style.display='flex'} else {nav.style.display='none'}
+    this.textContent = !expanded ? '✕' : '☰';
+    nav.classList.toggle('active');
+  });
+  
+  // Close menu when a link is clicked
+  const navLinks = nav.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = '☰';
+      nav.classList.remove('active');
+    });
   });
 
   // Set year in footer
