@@ -261,6 +261,24 @@ a:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
+
+@media (max-width: 767px) {
+  .header-inner {
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+  
+  .call-now {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.85rem;
+  }
+  
+  .whatsapp-btn {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+
 @media (min-width: 768px) {
   .nav-toggle {
     display: none;
