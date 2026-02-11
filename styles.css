@@ -30,7 +30,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: var(--text);
-  background: var(--white);
+  background: var(--light-bg);
 }
 
 .container {
@@ -139,7 +139,7 @@ a:hover {
 .site-header {
   background: var(--primary);
   color: var(--white);
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -161,6 +161,12 @@ a:hover {
   text-decoration: none;
   display: flex;
   align-items: center;
+}
+
+.brand-logo {
+  height: 64px;
+  width: auto;
+  display: block;
 }
 
 .logo-text {
@@ -306,11 +312,10 @@ a:hover {
     border-bottom-color: var(--secondary);
   }
 }
-}
 
 /* ===== HERO SECTION ===== */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/autoband3.png') center/cover no-repeat;
+  background: url('Images/autoband3.png') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   color: var(--text);
@@ -344,7 +349,7 @@ a:hover {
 }
 
 .hero-about {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('Images/band4.png') center/cover no-repeat;
+  background: url('Images/band4.png') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 300px;
@@ -357,7 +362,7 @@ a:hover {
 }
 
 .hero-diensten {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/band3.png') center/cover no-repeat;
+  background: url('Images/band3.png') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 300px;
@@ -377,7 +382,7 @@ a:hover {
 
 /* ===== VISUAL HERO SECTION ===== */
 .visual-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/band3.png') center/cover no-repeat;
+  background: url('Images/band3.png') center/cover no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -447,22 +452,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-}
-
-.hero h1 {
-  color: var(--text);
-  font-size: 2.5rem;
-  margin: 0;
-  text-align: center;
-}
-
-.hero p {
-  color: var(--muted);
-  font-size: 1.1rem;
-  max-width: 600px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero .container {
@@ -653,6 +642,8 @@ footer h4 {
 .footer-content p a:hover {
   color: var(--secondary);
 }
+
+.site-footer hr {
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin: 1rem 0;
@@ -927,6 +918,7 @@ footer h4 {
   .contact-buttons .btn {
     width: 100%;
   }
+}
 
 /* ===== TRUST BADGES ===== */
 .trust-badges {
@@ -1020,11 +1012,11 @@ footer h4 {
 }
 
 /* ===== ALTERNATING SECTION BACKGROUNDS ===== */
-.section:nth-child(even) {
+.section:not(.hero):nth-child(even) {
   background: linear-gradient(to bottom, #fafafa 0%, #f5f5f5 100%);
 }
 
-.section:nth-child(odd) {
+.section:not(.hero):nth-child(odd) {
   background: white;
 }
 
