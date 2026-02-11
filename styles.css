@@ -312,12 +312,24 @@ a:hover {
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/autoband3.png') center/cover no-repeat;
   background-size: cover;
+  background-position: center;
   color: var(--text);
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
   overflow: hidden;
   border-bottom: 3px solid var(--primary);
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 2rem 1rem;
+    min-height: 250px;
+  }
 }
 
 .hero h1 {
@@ -334,11 +346,27 @@ a:hover {
 .hero-about {
   background: url('Images/band4.png') center/cover no-repeat;
   background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+
+@media (max-width: 767px) {
+  .hero-about {
+    min-height: 250px;
+  }
 }
 
 .hero-diensten {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/band 2.png') center/cover no-repeat;
   background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+
+@media (max-width: 767px) {
+  .hero-diensten {
+    min-height: 250px;
+  }
 }
 
 .hero-diensten h1,
@@ -352,7 +380,7 @@ a:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/band 2.png') center/cover no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 400px;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,7 +410,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .visual-hero {
-    min-height: 300px;
+    min-height: 250px;
     background-attachment: scroll;
   }
   
