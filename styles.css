@@ -357,7 +357,7 @@ a:hover {
 }
 
 .hero-diensten {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/band 2.png') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/band%202.png') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 300px;
@@ -377,9 +377,10 @@ a:hover {
 
 /* ===== VISUAL HERO SECTION ===== */
 .visual-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/band 2.png') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/band%202.png') center/cover no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   min-height: 300px;
   display: flex;
   align-items: center;
