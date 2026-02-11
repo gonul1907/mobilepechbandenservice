@@ -287,7 +287,25 @@ a:hover {
   
   .main-nav {
     display: flex;
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    box-shadow: none;
+    gap: 0.5rem;
   }
+  
+  .main-nav a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    padding: 0.5rem 1rem;
+  }
+  
+  .main-nav a:hover,
+  .main-nav a.active {
+    background: transparent;
+    border-bottom-color: var(--secondary);
+  }
+}
 }
 
 /* ===== HERO SECTION ===== */
